@@ -1,0 +1,20 @@
+<?php  
+	class Database
+	{
+		public $con;
+		protected $servername = "localhost";
+		protected $username = "root";
+		protected $password = "";
+		protected $dbname = "shop";
+
+		function __construct()
+		{
+			$this->con = mysqli_connect($this->servername, $this->username, $this->password, $this->dbname);
+			mysqli_query($this->con, "SET NAMES 'utf8'");
+
+			if(!$this->con){
+				echo "fail to connect";
+			}
+		}
+	}
+?>

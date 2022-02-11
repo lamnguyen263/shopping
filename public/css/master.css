@@ -1,0 +1,6 @@
+.header{
+	background: linear-gradient(180deg, rgba(155,155,255,0.8), transparent);
+}
+.product-item img{
+	width: 100%;
+}
